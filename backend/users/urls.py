@@ -3,8 +3,8 @@ from .views import (
     user_redirect_view,
     UserUpdateView,
     user_update_view,
-    user_detail_view,
     UserDetailView,
+    user_detail_view,
 )
 
 app_name = "users"

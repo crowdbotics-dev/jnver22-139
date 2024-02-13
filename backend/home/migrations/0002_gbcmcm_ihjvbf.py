@@ -5,29 +5,53 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
-        ('home', '0001_load_initial_data'),
+        ("home", "0001_load_initial_data"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Ihjvbf',
+            name="Ihjvbf",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('vcbcc', models.BigIntegerField()),
-                ('reyeue', models.BigIntegerField()),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("vcbcc", models.BigIntegerField()),
+                ("reyeue", models.BigIntegerField()),
             ],
         ),
         migrations.CreateModel(
-            name='Gbcmcm',
+            name="Gbcmcm",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('vcbdb', models.BigIntegerField()),
-                ('reyey', models.BigIntegerField()),
-                ('rel_ihjvbf_1_1', models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='gbcmcm_rel_ihjvbf_1_1', to='home.ihjvbf')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("vcbdb", models.BigIntegerField()),
+                ("reyey", models.BigIntegerField()),
+                (
+                    "rel_ihjvbf_1_1",
+                    models.OneToOneField(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="gbcmcm_rel_ihjvbf_1_1",
+                        to="home.ihjvbf",
+                    ),
+                ),
             ],
         ),
     ]

@@ -8,8 +8,8 @@ class Gbcmcm(models.Model):
     reyey = models.BigIntegerField()
     rel_ihjvbf_1_1 = models.OneToOneField(
         "home.Ihjvbf",
-        blank=True,
         null=True,
+        blank=True,
         on_delete=models.CASCADE,
         related_name="gbcmcm_rel_ihjvbf_1_1",
     )
